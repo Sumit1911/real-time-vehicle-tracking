@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRTC Admin Dashboard</title>
+    <link rel="shortcut icon" href="/Login/assets/img/HRTCHP.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/HRTCHP.jpg" alt="HRTC Logo" class="logo-hrtc"></a>
+            </div>
+            <div class="content">
+                <h1>Welcome To HRTC Admin DashBoard</h1>
+            </div>
+            <div class="logout">
+                <a href="/Login/index.html" alt="server is down"><img src="./assets/images/power.png" alt="logout"></a>
+            </div>
+        </div>
+        <div class="rest-content">
+            <div class="sidebar-left">
+                <ul>
+                    <li class="list-item-1"><a href="#home">Home</a></li>
+                    <li class="list-item-1"><a href="./bus_Info/index.html">Bus Info</a></li>
+                    <li class="list-item-1"><a href="./bus_tracker/index.html">Bus Tracker</a></li>
+                    <li class="list-item-1"><a href="#traffic-control">Traffic Control</a></li>
+                    <li class="list-item-1"><a href="./Rerouting/index.html">Rerouting</a></li>
+                    <li class="list-item-1"><a href="#sos">SOS</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-content">
+                <div class="date-time">
+                    <div id="date" class="date-time-content"></div>
+                    <div id="time" class="date-time-content"></div>
+                </div>
+                <div class="box-all">
+                    <div class="box1">
+                        <h3>Todays Bus Count</h3>
+                        <hr>
+                        <p>0850 <img src="../dashboard/assets/images/increase.png" alt="">
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h3>Passengers on board</h3>
+                        <hr>
+                        <p>50000 <img src="../dashboard/assets/images/increase.png" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right">
+                <p>Alerts</p>
+                <hr>
+                <ul>
+                    <a href=""><li>Lorem ipsum dolor sit amet consectetur.</li></a>
+                    <a href=""><li>Lorem, ipsum dolor sit.</li></a>
+                    <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
+                    <a href=""><li>Lorem ipsum dolor sit amet consectetur adipisicing.</li></a>
+                    <a href=""><li>lorem4</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        function displayDate() {
+            const currentDate = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = currentDate.toLocaleDateString(undefined, options);
+            document.getElementById('date').textContent = formattedDate;
+        }
+        displayDate();
+    
+        function displayTime() {
+            const currentTime = new Date();
+            const options = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            const formattedTime = currentTime.toLocaleTimeString(undefined, options);
+            document.getElementById('time').textContent = formattedTime;
+        }
+        setInterval(displayTime, 1000);
+        displayTime();
+    </script>
+</body>
+</html>

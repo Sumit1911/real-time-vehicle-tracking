@@ -1,0 +1,88 @@
+.header {
+    text-align: center;
+    background: url(./img/header.jpg) no-repeat center center/cover;
+    height: 20vh;
+    border: 2px solid black;
+    padding: 0;
+    margin: -8px;
+}
+h1 {
+    margin: 35px 0px 0px 0px;
+    font-size: 3rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    margin: 7px 0px 0px 0px;
+}
+.container-content {
+    font-size: 2rem;
+    padding: 10px 91px 10px 20px;
+}
+#date {
+    font-weight: bold;
+}
+.busInfo {
+    display: flex;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #54f671db;
+}
+
+.search {
+    border: 2px solid whitesmoke;
+    padding: 67px;
+    background-color: #f1eeee;
+    border-radius: 16px;
+    margin: 0% 10% 0% 10%;
+}
+p {
+    display: inline;
+    font-size: 1.7rem;
+    padding: 4px;
+}
+input {
+    font-size: 1.3rem;
+    border-radius: 7px;
+    width: 14%;
+    padding: 2px;
+    margin: 0px 20px 0px 0px;
+}
+select {
+    margin: 2px;
+    border-radius: 6px;
+}
+button {
+    font-size: 1.2rem;
+    border-radius: 7px;
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2db1ff;
+    transition: all ease-in-out .2s;
+
+} 
+button:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+    transform: scale(1.1);
+}  
+.bus-check {
+    border: 2px solid black;
+    border-radius: 7px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+p.js-display-bus {
+    word-spacing: 200px;
+}
+   
+

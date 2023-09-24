@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white !important;
+    color: black; /* Set text color for the entire page */
+}
+.logo {
+    margin: 10px 0px -7px 80px;
+}
+.logo img {
+    position: static;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 9px 0px 14px 0px;
+    padding-left: 10px;
+    
+}
+.logo-hrtc{
+    right: 200px;
+}
+.logo-content{
+    display: flex;
+    border: 2px solid black;
+    background: url(../assets/img/mountains-8267051_1280.jpg) no-repeat center center/cover;
+}
+.content {
+    padding-left: 400px;
+}
+h1 {
+    margin: 45px 16px 40px -259px;
+    font-size: 3rem;
+}
+.logout {
+    margin: 40px 0px 0px 180px;
+    cursor: pointer;
+}
+.logout a img {
+    height: 60px;
+    width: 60px;
+}
+
+.sidebar-left {
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 270px;
+    height: 93%;
+    background-color: #10ee79;
+    color: #fff;
+    padding: 20px;
+}
+.sidebar-right {
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 270px;
+    height: 93%;
+    background-color: #10ee79;
+    color: #fff;
+    padding: 20px;
+}
+.sidebar-right>p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+.list-item-1{
+    padding: 25px;
+}
+.list-item-1 a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.list-item-1:hover {
+    transform: scale(1.1); /* Scale on hover */
+}
+li.list-item-1:hover {
+    background-color: #61e449;
+}
+
+.rest-content{
+    display: grid;
+    grid-template-columns: 1fr 2.8fr 1fr;
+}
+.date-time {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+.date-time-content {
+    font-size: 2rem;
+    padding: 10px 91px 10px 20px;
+}
+#date {
+    font-weight: bold;
+}
+.box1,.box2,.box3{
+    border: 2px solid black;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+}
+.box1{
+    background-color: whitesmoke;
+}
+.box1 p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.box2{
+    background-color: whitesmoke;
+}
+.box2 p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.box-all{
+    padding-top: 25px;
+    display: flex;
+    gap: 120px;
+    margin-left: 180px;
+
+}
+.box-all h3{
+    text-align: center;
+    padding-top: 10px;
+}
+.box-all>p {
+    font-size: 2rem;
+}
+.box-all p img {
+    height: 25px;
+}
+.dashboard-content {
+    /* background: url(./assets/images/collective-435584_1280.jpg) no-repeat center center/cover; */
+}

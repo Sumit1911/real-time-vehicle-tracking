@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Info</title>
+    <link rel="shortcut icon" href="/Login/assets/img/HRTCHP.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Himachal Road Transport Corporation</h1>
+    </div>
+    <div class="container">
+        <div id="date" class="container-content"></div>
+        <div id="time" class="container-content"></div>
+    </div>
+    <div class="busInfo">Bus Information</div>
+
+    <div class="search">
+        <div class="search-content">
+            <p>From:</p>
+            <input type="text" placeholder="Select From" class="from">
+            <p>To:</p>
+            <input type="text" placeholder="Select To" class="to">
+            <p>Bus Code:</p>
+            <input type="text" placeholder="Select Code">
+            <button>Search Bus</button>
+        </div>
+    </div>
+    <div class="bus-check">
+        <p class="js-display-bus"></p>
+    </div>
+    
+</body>
+
+<script>
+    
+    document.querySelector('.js-display-bus').innerHTML='Shimla-Manali 9:00AM-2:00PM Bus001 Contact';
+    function displayDate() {
+        const currentDate = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString(undefined, options);
+        document.getElementById('date').textContent = formattedDate;
+    }
+    displayDate();
+
+    function displayTime() {
+        const currentTime = new Date();
+        const options = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        const formattedTime = currentTime.toLocaleTimeString(undefined, options);
+        document.getElementById('time').textContent = formattedTime;
+    }
+    setInterval(displayTime, 1000);
+    displayTime();
+</script>
+</html>
+
+
